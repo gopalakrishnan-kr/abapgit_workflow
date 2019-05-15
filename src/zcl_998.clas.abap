@@ -1,14 +1,19 @@
-class ZCL_998 definition
-  public
-  final
-  create public .
+CLASS zcl_998 DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-public section.
-protected section.
-private section.
+  PUBLIC SECTION.
+    INTERFACES if_oo_adt_classrun.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS ZCL_998 IMPLEMENTATION.
+CLASS zcl_998 IMPLEMENTATION.
+  METHOD if_oo_adt_classrun~main.
+    out->write( 'Hello ABAP Git').
+  ENDMETHOD.
+
 ENDCLASS.
